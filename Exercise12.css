@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  margin: 0;
+  padding: 0;
+}
+#box1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 3vw;
+  color: #2BA1D0;
+}
+#box1 img{
+  width: 20%;
+  vertical-align: middle;
+  padding-right: 2%;
+}
+#box2 {
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 1%;
+
+}
+#box2 a {
+  padding: 2%;
+  color: aqua;
+}
+#box2 a:hover{
+  color: antiquewhite;
+}
+header::after {
+content: "";
+clear: both;
+display: table;
+}
+h2{
+  text-align: center;
+  font-size: 3vw;
+  color: #7CD1F2;
+}
+#abo{
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  font-size: 1.4vw;
+  color: #F08933;
+  background-image: url("images/palawan.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#art1 {
+  text-align: justify;
+  float: left;
+  color: white;
+}
+#art2 {
+  text-align: right;
+  color: white;
+}
+#art1::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+#exp{
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+  margin: 2%;
+  font-size: 3vw;
+  border: thistle 2px solid;
+  color: white;
+ 
+}
+.box{
+  width: 33.33%;
+  float: left;
+  background-size: 100% 100%;
+  padding: 3%;
+  border: 8px solid white;
+}
+#exp::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+#must{
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+  margin: 2%;
+  font-size: 2vw;
+  border: thistle 2px solid;
+  color: white;
+ 
+}
+.see{
+  width: 25%;
+  float: left;
+  background-size: 100% 100%;
+  padding: 3%;
+  border: 8px solid white;
+}
+#must::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  @media screen and (max-width:768px) {
+    #box1, #box2, .box {
+      width:100%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+  .see{
+        width:50%;
+      }
+    }
+   @media screen and (max-width:320px) {
+    #box1, #box2, .box, .see{
+          width:100%;
+     }
+}
